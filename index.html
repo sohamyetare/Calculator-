@@ -1,0 +1,11 @@
+
+<!DOCTYPE html><html><head><title>Pro Calculator</title>
+<style>body{font-family:Arial;display:flex;justify-content:center;padding:40px;background:#f5f5f5}
+.box{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 10px #ccc}input,button{padding:10px;margin:5px}</style></head>
+<body><div class='box'><h2>Professional Calculator</h2>
+<input id='a' type='number'><input id='b' type='number'><br>
+<button onclick='calc(`+`)'>+</button><button onclick='calc(`-`)'>-</button>
+<button onclick='calc(`*`)'>×</button><button onclick='calc(`/`)'>÷</button>
+<h3 id='r'></h3></div>
+<script>function calc(op){let a=+document.getElementById('a').value,b=+document.getElementById('b').value;document.getElementById('r').innerText=eval('a'+op+'b');}</script>
+</body></html>
